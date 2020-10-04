@@ -1,0 +1,135 @@
+html {
+  background: linear-gradient(to right, #cc00ff, #006eff);
+}
+
+#root {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.App {
+  text-align: left;
+}
+
+.stop-game {
+  display: none;
+}
+
+/* APPLICATION HEADER  */
+.App-header {
+  background-color: none;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 15px;
+  background: linear-gradient(to right, #cc00ff, #006eff);
+}
+
+/* MAIN BODY */
+.Main {
+  background-color: #303944;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: calc(14px + 1vmin);
+  padding: 5px 30px 40px 30px;
+  background: grey;
+}
+
+#footer {
+  list-style-type: none;
+}
+
+/* Adjust boxes for RPS detection on camerea */
+.wiggle {
+  animation-name: wiggle;
+  -webkit-animation-name: wiggle;
+
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+
+  visibility: visible !important;
+} 
+
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(4deg);
+  }
+  100% {
+    -webkit-transform: rotate(-4deg);
+  }
+}
+
+.outro {
+  width: 70%;
+} 
+
+.credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+#closer {
+  height: 75px;
+  padding: 20px 25px 20px 0px;
+}
+
+/* THIS IS THE CONTAINOR FOR THE BUTTON */
+.advancedContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#advancedLoadText {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0;
+  -webkit-animation: rainbow-text 3s infinite;
+  animation: rainbow-text 3s infinite;
+}
+
+.advancedCam {
+  position: relative;
+}
+
+.advancedBox {
+  position: absolute;
+}
+
+@keyframes rainbow-text {
+  0% {
+    color: #e63462;
+  }
+  20% {
+    color: #fde74c;
+  }
+  40% {
+    color: #9bc53d;
+  }
+  60% {
+    color: #5dd9c1;
+  }
+  80% {
+    color: #6457a6;
+  }
+  100% {
+    color: #fff;
+  }
+}
