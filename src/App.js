@@ -140,7 +140,6 @@ activateTimeout = () => {
       return (
         <div>
           <AdvancedModel key="advancedDemo" rpsGame={this.rpsGame} stopGame={this.state.stopGame}/>
-          <p>Turn off ad-block where applicable</p>
         </div>
       );
     }
