@@ -63,13 +63,10 @@ rpsGame = (yourChoice) => {
   let humanChoice, botChoice;
   
   // Human choice id selector
-  humanChoice = yourChoice; // ******* Take the answer from the AI *****(Create a extra function which receves the value rock, paper or scissors a certain num of times before relising answer in the function)
-  // console.log(humanChoice);
+  humanChoice = yourChoice; 
 
   // Bot choice selector
   botChoice = this.numberToChoice(this.randToRpsInt())
-  // console.log('Computer choice:', botChoice)
-  // Result for winner and loser
 
   const result = this.desideWinner(humanChoice, botChoice);
   // Message database for results
